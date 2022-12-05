@@ -1,5 +1,10 @@
 <script setup>
 // TODO: 编辑
+import { ref } from 'vue'
+// 弹框开关
+const dialogVisible = ref(false)
+
+
 </script>
 
 <template>
