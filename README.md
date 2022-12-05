@@ -1,29 +1,27 @@
-# vue3-demo-template
+# 启动项目
 
-This template should help get you started developing with Vue 3 in Vite.
+1. npm install
+2. npm run dev
 
-## Recommended IDE Setup
+# 接口说明
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 获取列表
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-yarn
+```javascript
+axios.get('/list')
 ```
 
-### Compile and Hot-Reload for Development
+## 删除
 
-```sh
-yarn dev
+```javascript
+axios.delete(`/del/${id}`)
 ```
 
-### Compile and Minify for Production
+## 编辑
 
-```sh
-yarn build
+```javascript
+await axios.patch(`/edit/${id}`, {
+  name: '姓名',
+  place: '籍贯',
+})
 ```
