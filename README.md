@@ -20,7 +20,7 @@ axios.delete(`/del/${id}`)
 ## 编辑
 
 ```javascript
-await axios.patch(`/edit/${id}`, {
+axios.patch(`/edit/${id}`, {
   name: '姓名',
   place: '籍贯',
 })
